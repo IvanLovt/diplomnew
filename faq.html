@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>компания</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <script src="./public/js/app.js" defer></script>
+
+    <script src="./public/js/reg.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>	
+    <header>
+		<nav>
+            <span class="left_head">
+                <h1>Рыболовное и <br> рыбообрабатывающее <br> предприятие</h1> 
+                <a href="/index.html"><img class="icon_head" src="./public/img/1687994638_sneg-top-p-riba-ava-instagram-30.png"width=75 alt=""></a>
+            </span>
+			<span>
+				<a href="./index.html">Главная</a>
+				<a href="./faq.html">О Компании</a>
+                <a href="./location.html">Новости</a>
+                <a href="./location.html">Контакты</a>
+                <a href="#"><button class="fancy">Войти </button></a>
+            </span>  
+            <div class="toggle_btn">
+                <ion-icon name="list-outline"></ion-icon> 
+            </div>
+		</nav>
+        <div class="dropmenu">
+            <ul>
+				<li> <a href="./index.html">Главная</a></li>
+				<li><a href="./faq.html">О Компании</a></li>
+                <li><a href="/html/location.html">Новости</a></li>
+                <li><a href="/html/location.html">Контакты</a></li>
+                
+            </ul>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const dropmenu = document.querySelector('.dropmenu')
+    
+            toggleBtn.onclick = function(){
+                dropmenu.classList.toggle ('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+	</header>
+    <main>
+        <div class="modal">
+            <div class="form" >
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+          <script>
+            const fancy = document.querySelector(".fancy");
+            const modal = document.querySelector(".modal");
+      
+            fancy.onclick = function () {
+              modal.classList.toggle("open");
+              const isOpen = modal.classList.contains("open");
+            };
+          </script>
+          <div class="pamel_singl" style="
+        background-image: url(./public/img/1614401843_2-p-riba-na-temnom-fone-2.jpg);">
+            <h1 class="tit_panel">О КОМ<span>ПА</span>НИИ</h1>
+        </div>
+    </main>
+</body>
+</html>

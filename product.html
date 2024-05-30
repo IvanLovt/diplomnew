@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./public/js/app.js" defer></script>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>	
+    <header>
+		<nav>
+            <span class="left_head">
+                <h1>Рыболовное и <br> рыбообрабатывающее <br> предприятие</h1> 
+                <a href="/index.html"><img class="icon_head" src="./public/img/1687994638_sneg-top-p-riba-ava-instagram-30.png"width=75 alt=""></a>
+            </span>
+			<span>
+				<a href="./index.html">Главная</a>
+				<a href="./faq.html">О Компании</a>
+                <a href="./location.html">Новости</a>
+                <a href="./location.html">Контакты</a>
+                <a href="#" class="basket"></a>
+                <a href="#"><button class="fancy">Вошел </button></a>
+            </span>  
+            <div class="toggle_btn">
+                <ion-icon name="list-outline"></ion-icon> 
+            </div>
+		</nav>
+        <div class="dropmenu">
+            <ul>
+				<li> <a href="./index.html">Главная</a></li>
+				<li><a href="./faq.html">О Компании</a></li>
+                <li><a href="/html/location.html">Новости</a></li>
+                <li><a href="/html/location.html">Контакты</a></li>
+                <li><a href="№" class="basket"></a></li>
+            </ul>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const dropmenu = document.querySelector('.dropmenu')
+    
+            toggleBtn.onclick = function(){
+                dropmenu.classList.toggle ('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+	</header>
+    <main>
+        <div class="modal">
+            <div class="form" >
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+          <script>
+            const fancy = document.querySelector(".fancy");
+            const modal = document.querySelector(".modal");
+      
+            fancy.onclick = function () {
+              modal.classList.toggle("open");
+              const isOpen = modal.classList.contains("open");
+            };
+          </script>
+        <div class="pamel_singl" style="
+        background-image: url(./public/img/1614401843_2-p-riba-na-temnom-fone-2.jpg);">
+            <h1 class="tit_panel">ПРОДУ<span>КЦИЯ</span></h1>
+        </div>
+        <div class="panel_shop">
+            <p class="tit_lit">НИЧЕГО ЛИШНЕГО, ТОЛЬКО <span>РЫБА</span></p>
+            <h1>КАТАЛОГ ПРОДУКЦИИ</h1>
+            <div class="variant">
+                <span>ВСЕ</span>
+                <span>Копченая рыба</span>
+                <span>ПРЕСЕРВЫ</span>
+                <span>ЗАМОРОЖЕННАЯ РЫБА</span> 
+                <span>ВЯЛЕНАЯ РЫБА</span>
+            </div>
+            <div class="shop_calect">    
+                <div class="shop_item">
+                    <img class="photo_item" width="360" src="./public/img/Opera Снимок_2024-05-28_141644_petrotral.ru.png" alt="">
+                    <div class="tit_item_shop">
+                        <h2>Салака горячего копчения</h2>
+                        <div class="prise_item">
+                            <p style="opacity: 50%;"> <s>P500</s></p>
+                            <div class="product__price"><span class="product__price-number">320</span> ₽</div>
+                        </div>
+                        <div class="buy_fish">
+                            <a href="#" class="button_buy" data-sb-id-or-vendor-code="9"
+                            data-sb-product-name="Салака горячего копчения"
+                            data-sb-product-price="320"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="./public/img/Opera Снимок_2024-05-28_141644_petrotral.ru.png">Заказать</a>
+                        </div>
+                        
+                        <form action="">
+                            <div class="smart-basket__quantity-item"></div> 
+                        </form>
+                        <p>300г</p>
+                    </div>
+                </div>
+                <div class="shop_item">
+                    <img class="photo_item" width="360" src="./public/img/Opera Снимок_2024-05-28_141658_petrotral.ru.png" alt="">
+                    <div class="tit_item_shop">
+                        <h2>Салака горячего копчения</h2>
+                        <div class="prise_item">
+                            <p style="opacity: 50%;"> <s>P1500</s></p>
+                            <div class="product__price"><span class="product__price-number">520</span> ₽</div>
+                        </div>
+                        <div class="buy_fish">
+                            <a href="#" class="button_buy" data-sb-id-or-vendor-code="8"
+                            data-sb-product-name="Салака горячего копчения"
+                            data-sb-product-price="520"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="./public/img/Opera Снимок_2024-05-28_141658_petrotral.ru.png">Заказать</a>
+                        </div>
+                        
+                        <form action="">
+                            <div class="smart-basket__quantity-item"></div> 
+                        </form>
+                        <p>300г</p>
+                    </div>
+                </div>
+                <div class="shop_item">
+                    <img class="photo_item" width="360" src="./public/img/Opera Снимок_2024-05-28_143445_petrotral.ru.png" alt="">
+                    <div class="tit_item_shop">
+                        <h2>Салака холодного копчения</h2>
+                        <div class="prise_item">
+                            <p style="opacity: 50%;"> <s>P500</s></p>
+                            <div class="product__price"><span class="product__price-number">920</span> ₽</div>
+                        </div>
+                        <div class="buy_fish">
+                            <a href="#" class="button_buy" data-sb-id-or-vendor-code="7"
+                            data-sb-product-name="Салака холодного копчения"
+                            data-sb-product-price="920"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="./public/img/Opera Снимок_2024-05-28_143445_petrotral.ru.png">Заказать</a>
+                        </div>
+                        
+                        <form action="">
+                            <div class="smart-basket__quantity-item"></div> 
+                        </form>
+                        <p>300г</p>
+                    </div>
+                </div>
+                <div class="shop_item">
+                    <img class="photo_item" width="360" src="./public/img/горячего горбуша.png" alt="">
+                    <div class="tit_item_shop">
+                        <h2>Салака горячего копчения</h2>
+                        <div class="prise_item">
+                            <p style="opacity: 50%;"> <s>P500</s></p>
+                            <div class="product__price"><span class="product__price-number">480</span> ₽</div>
+                        </div>
+                        <div class="buy_fish">
+                            <a href="#" class="button_buy" data-sb-id-or-vendor-code="6"
+                            data-sb-product-name="Салака горячего копчения"
+                            data-sb-product-price="320"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="./public/img/горячего горбуша.png">Заказать</a>
+                        </div>
+                        
+                        <form action="">
+                            <div class="smart-basket__quantity-item"></div> 
+                        </form>
+                        <p>300г</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel_backvisit">
+            <div class="vizit">
+                <img class="back_viz"  src="./public/img/about-us-banner.jpg" alt="">
+                <div class="vizit_title">
+                    <h3>Подпишись <br> на рассылку</h3>
+                    <form class="input_box" action="">
+                        <input type="text" name="" id="" spellcheck="true">
+                            <section>
+                                <a href="#" class="button2 b-pink rot-135">Подписаться</a>
+                            </section>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="up_footer">
+            <div class="nav_logo">
+            </div>
+            <div class="nav_menu_footer">
+                <div class="lists">
+                    <ul>
+                        <label class="glob">Навигация</label>
+                        <li> <a href=" #">Продукция</a></li>
+                        <li> <a href="#">О Компании</a></li>
+                        <li><a href="# "></a>Новости</li>
+                        <li> <a href="#">Контакты</a></li>
+                    </ul>
+                    <ul>
+                        <label class="glob">Партнерам</label>
+                        <li> <a href=" #">Наши парнетры</a></li>
+                        <li> <a href=" #">Заказ на переобработку</a></li>
+                    </ul>
+                    <ul>
+                        <label class="glob">Контакты</label>
+                        <li>Телефон: 7 (812) 200-45-87</li>
+                        <li>Mail : info@astraBod.ru</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'shop_item',
+				buttonAddToBasket: 'button_buy',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'smart-basket__quantity-item',
+				smartBasketMinArea: 'basket',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './public/img/shopping-bag-fill.png',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: '11111',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+</body>
+</html>

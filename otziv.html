@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./public/js/app.js" defer></script>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>	
+    <header>
+		<nav>
+            <span class="left_head">
+                <h1>Рыболовное и <br> рыбообрабатывающее <br> предприятие</h1> 
+                <a href="/index.html"><img class="icon_head" src="./public/img/1687994638_sneg-top-p-riba-ava-instagram-30.png"width=75 alt=""></a>
+            </span>
+			<span>
+				<a href="./index.html">Главная</a>
+				<a href="./faq.html">О Компании</a>
+                <a href="./product.html">Продукция</a>
+                <a href="./location.html">Контакты</a>
+                <a href="#" class="basket"></a>
+                <a href="#"><button class="fancy">Вошел </button></a>
+            </span>  
+            <div class="toggle_btn">
+                <ion-icon name="list-outline"></ion-icon> 
+            </div>
+		</nav>
+        <div class="dropmenu">
+            <ul>
+				<li> <a href="./index.html">Главная</a></li>
+				<li><a href="./faq.html">О Компании</a></li>
+                <li><a href="/html/location.html">Новости</a></li>
+                <li><a href="/html/location.html">Контакты</a></li>
+                <li><a href="№" class="basket"></a></li>
+            </ul>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const dropmenu = document.querySelector('.dropmenu')
+    
+            toggleBtn.onclick = function(){
+                dropmenu.classList.toggle ('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+	</header>
+    <main>
+        <div class="pamel_singl" style="
+        background-image: url(./public/img/1614401843_2-p-riba-na-temnom-fone-2.jpg);">
+            <h1 class="tit_panel">ОТ<span>ЗЫВЫ</span></h1>
+        </div>
+        <div class="otziv">
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://div-class-pamel-singl-style-background-image-url.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </main>
+</body>
+</html>

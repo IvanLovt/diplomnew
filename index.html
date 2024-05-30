@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="./public/js/paral.js" defer></script>
+  <script src="./public/js/rain.js" defer></script>
+  <script src="./public/js/app.js" defer></script>
+  <script src="./public/js/Swiper.js" defer></script>
+  <script type="module" src="/public/js/reg.js" defer> </script>
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <header>
+    <nav>
+      <span class="left_head">
+        <h1>
+          Рыболовное и <br />
+          рыбообрабатывающее <br />
+          предприятие
+        </h1>
+        <a href="./index.html"><img class="icon_head" src="./public/img/1687994638_sneg-top-p-riba-ava-instagram-30.png"
+            width="75" alt="" /></a>
+      </span>
+      <span>
+        <a href="./product.html">Продукция</a>
+        <a href="./faq.html">О Компании</a>
+        <a href="./otziv.html">Отзывы</a>
+        <a href="./html/location.html">Контакты</a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon_social" viewBox="0 0 22 22" width="30"
+            height="30" fill="rgba(255,255,255,1)">
+            <path
+              d="M12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22ZM8.89113 13.1708L8.90378 13.1628C9.48351 15.0767 9.77337 16.0337 9.77337 16.0337C9.88564 16.3442 10.04 16.3996 10.2273 16.3743C10.4145 16.3489 10.5139 16.2476 10.6361 16.1297C10.6361 16.1297 11.0324 15.7472 11.825 14.9823L14.3759 16.8698C14.8407 17.1266 15.1763 16.9941 15.2917 16.4377L16.9495 8.61641C17.1325 7.88842 16.8115 7.59644 16.247 7.82754L6.51397 11.5871C5.84996 11.854 5.85317 12.2255 6.39308 12.3911L8.89113 13.1708Z">
+            </path>
+          </svg></a>
+        <a href="#"><button class="fancy">Войти </button></a>
+      </span>
+      <div class="toggle_btn">
+        <ion-icon name="list-outline"></ion-icon>
+      </div>
+    </nav>
+    <div class="dropmenu">
+      <ul>
+        <li><span><a href="./product.html">Продукция</a></span></li>
+        <li><a href="./faq.html">О Компании</a></li>
+        <li><a href="./otziv.html">Отзывы</a></li>
+        <li><a href="./html/location.html">Контакты</a></li>
+        <li><a href="#" class="basket"></a></li>
+      </ul>
+    </div>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const dropmenu = document.querySelector(".dropmenu");
+
+      toggleBtn.onclick = function () {
+        dropmenu.classList.toggle("open");
+        const isOpen = dropmenu.classList.contains("open");
+      };
+    </script>
+  </header>
+  <main>
+    <div class="modal">
+      <div class="form" >
+        <form >
+          <input type="email" id="email" name="email" placeholder="email" required/>
+          <input type="password" id="password" name="password" placeholder="password" required/>
+          <button id="submit" class="registerbut" type="submit">create</button>
+        </form>
+        <form  action=""  >
+          <input type="text"name="login" placeholder="username"/>
+          <input type="password" name="password" placeholder="password"/>
+          <button id="submit" class="loginbut" type="submit">login</button>
+        </form> 
+      </div>
+    </div>
+    <script>
+      const fancy = document.querySelector(".fancy");
+      const modal = document.querySelector(".modal");
+
+      fancy.onclick = function () {
+        modal.classList.toggle("open");
+        const isOpen = modal.classList.contains("open");
+      };
+    </script>
+    <script>
+      $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+     });
+    </script>
+    <section class="layers">
+      <div class="layers__container">
+        <div class="layers__item layer-1" style="
+              background-image: url(./public/img/OceanFloor_screenshot_06-1920x1080-7ff11cc8eabfb63323a8ed324533d7ef.png);
+            "></div>
+        <div class="layers__item layer-2" style="background-image: url(./public/img)"></div>
+        <div class="layers__item layer-3">
+          <div class="hero-content">
+            <h1>Рыбообработка<span>Астрахань</span></h1>
+            <div class="hero-content__p">
+              Занимаемся рыбообработкой с 1985 года <br />
+              эксперты в своем деле
+            </div>
+            <a href="./product.html" class="button-start">Каталог</a>
+          </div>
+        </div>
+        <div class="layers__item layer-4">
+          <canvas class="rain"></canvas>
+        </div>
+        <div class="layers__item layer-6" style="background-image: url(./public/img/layer-6.png)"></div>
+      </div>
+    </section>
+    <div class="back_ground">
+      <div class="deseret_contain">
+        <h2>О главном</h2>
+        <div class="glob_cont">
+          <div class="desert_text">
+            <h1>Ловим-<span>обрабатываем</span>-храним</h1>
+            <p>
+              Мы <span>сами</span> ловим рыбу, перерабатываем, храним <br />
+              и доставляем <span>готовую</span> продукцию. <br />
+              Из моря до прилавков магазинов <span>наша</span> рыба <br />
+              попадает за <span>24 часа</span>
+            </p>
+          </div>
+          <div class="intro">
+            <img class="png_right" width="475px" src="./public/img/tass_16338422_d_850-2048x1366.jpg" alt="photo" />
+            <img class="png_left" width="500px" src="./public/img/43.jpg" alt="photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deseret_containS">
+      <div class="glob_contS">
+        <img class="png_right" width="500px" height="600" src="./public/img/28ubBedANCA.jpg" />
+        <div class="desert_textS">
+          <h1><span>Цель</span> компании</h1>
+          <h2>
+            Мы ставим перед собой глобальную задачу — <br />развить и
+            поддержать производство продукции из местной дикой рыбы (салаки,
+            кильки) и сформировать <br />
+            культуру потребления этих видов рыб.
+          </h2>
+          <p>
+            Вся выпускаемая нами продукция изготавливается из натурального
+            сырья по уникальной рецептуре.<br />
+            Она безопасна, экологична и соответствует высоким пищевым
+            стандартам.<br />
+            За счет того, что AСХ «ВодАстра» — предприятие<br />
+            полного цикла, мы гарантируем доступную цену на выпускаемую
+            продукцию.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="market">
+      <h1>Рыба на нашем производсвтве</h1>
+      <p>
+        Мы специализируемся на производстве <br />
+        высококачественной рыбной продукции из следующих <br />
+        видов рыбы:
+      </p>
+      <div class="market_cat">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="iterm">
+                <div class="imgin">
+                  <img src="./public/img/Opera Снимок_2024-05-12_160346_petrotral.ru.png" width="157" alt="" />
+                </div>
+                <a href="#">Корюшка</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="iterm">
+                <div class="imgin">
+                  <img src="./public/img/Opera Снимок_2024-05-12_162012_petrotral.ru.png" alt="" />
+                </div>
+                <a href="#">Скумбрия</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="iterm">
+                <div class="imgin">
+                  <img src="./public/img/Opera Снимок_2024-05-12_162058_petrotral.ru.png" width="160" alt="" />
+                </div>
+                <a href="#">Треска</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="iterm">
+                <div class="imgin">
+                  <img src="./public/img/Opera Снимок_2024-05-12_162116_petrotral.ru.png" width="175" alt="" />
+                </div>
+                <a href="#">Килька</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="iterm">
+                <div class="imgin">
+                  <img src="./public/img/Opera Снимок_2024-05-12_160346_petrotral.ru.png" width="157" alt="" />
+                </div>
+                <a href="#">Корюшка</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      </div>
+    </div>
+    <div class="panel_sz_nobmv">
+      <div class="panel_material">
+        <div class="title_material">
+          <div class="tit">
+            <h1>Высококачественное сырье</h1>
+          </div>
+          <p>
+            Благодаря нащим партнерам мы самостоятельно добываем рыбу и
+            сортируем ее сразу после вылова. <br />
+            От причала до нашего берегового предприятия — всего 150 метров,
+            поэтому рыба попадает сразу на производство, <br />где проходит
+            контроль качества и идет на переработку.
+          </p>
+        </div>
+        
+        <div class="title_material">
+          <div class="tit">
+
+            <h1>Новейшее производство</h1>
+          </div>
+          <p>
+            Наше производство оборудовано и работает по всем стандартам,
+            внедрена система качества ISO 22000, <br />строго соблюдаются
+            принципы HASSP. На предприятии установлено новейшее оборудование и
+            <br />системы контроля за соблюдением норм безопасности. <br />
+            Мы используем современные технологии в области производства и
+            упаковки продукции.
+          </p>
+        </div>
+        
+        <div class="title_material">
+          <div class="tit">
+
+            <h1>Контроль качества на каждом этапе</h1>
+          </div>
+          <p>
+            На нашем предприятии работает производственная лаборатория, где
+            вся рыба проходит <br />
+            строгий контроль. Готовая продукция также подвергается проверке на
+            качество и соответствие всем нормам. <br />
+            Вся выпускаемая нами продукция соответствует критериям
+            микробиологической безопасности пищевой продукции.
+          </p>
+        </div>
+      </div>
+      <div class="pmg_bmw">
+        <img src="./public/img/KHf5fdAek5Q.jpg" width="400" alt="" />
+        <div class="fles_dire">
+          <p><span>С любовью к процессу </span></p>
+        </div>
+      </div>
+    </div>
+    <div class="panel_backvisit">
+      <div class="vizit">
+        <img class="back_viz" src="./public/img/about-us-banner.jpg" alt="" />
+        <div class="vizit_title">
+          <h3> Подпишись <br />на рассылку</h3>
+          <form class="input_box" action="">
+            <input type="text" name="" id="" spellcheck="true" />
+            <section>
+              <a href="#" class="button2 b-pink rot-135">Подписаться</a>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="up_footer">
+      <div class="nav_logo"></div>
+      <div class="nav_menu_footer">
+        <div class="lists">
+          <ul>
+            <label class="glob">Навигация</label>
+            <li><a href=" #">Продукция</a></li>
+            <li><a href="#">О Компании</a></li>
+            <li><a href="# "></a>Новости</li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul>
+            <label class="glob">Партнерам</label>
+            <li><a href=" #">Наши парнетры</a></li>
+            <li><a href=" #">Заказ на переобработку</a></li>
+          </ul>
+          <ul>
+            <label class="glob">Контакты</label>
+            <li>Телефон: 7 (812) 200-45-87</li>
+            <li>Mail : info@astraBod.ru</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
